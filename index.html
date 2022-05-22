@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <i onclick="responsive()" style="color: white;position: absolute;font-size:1.7rem;right: 7%;top: 40%;"
+                class="fa fa-bars ham"></i>
+        </div>
+    </nav>
+    <section class="header">
+        <div class="header-video">
+            <video class="video" src="./public/videos/banner-video.mp4"></video>
+            <!-- <div class="overlay"></div> -->
+            <div class="header-content">
+                <h1>Welcome To Outdoor</h1>
+                <p>Breathe Freedom</p>
+                <button onclick="playVideo()">
+                    <i class="fa fa-play-circle"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explore-heading">
+            <h2>Explore What you see</h2>
+            <p>Believe caused till pale relationships human highlight find. Stroke through draining i'm meet resting
+                relationships nature. Time along fixated it sleeves polished caused i'm provisions mulberry tune
+                birthdays
+                themed guests than missed touch breath.</p>
+
+        </div>
+        <div class="explore-cards">
+            <div class="explore-card">
+                <img src="/public/images/explore-1.png">
+                <div class="explore-card-content">
+                    <h3>Giga Falls</h3>
+                    <p>AUSTRALIA</p>
+                </div>
+            </div>
+            <div class="explore-card">
+                <img src="/public/images/explore-2.png">
+                <div class="explore-card-content">
+                    <h3>Fenders</h3>
+                    <p>NORWAY</p>
+                </div>
+            </div>
+            <div class="explore-card">
+                <img src="/public/images/explore-3.png">
+                <div class="explore-card-content">
+                    <h3>Gem Falls</h3>
+                    <p>IRELAND</p>
+                </div>
+            </div>
+        </div>
+        <a href="#">See More -></a>
+    </section>
+    <section class="reach">
+        <div class="reach-heading">
+            <h2>Be at Nowhere</h2>
+            <p>Believe caused till pale relationships human highlight find. Stroke through draining i'm meet resting
+                relationships nature. Time along fixated i'm provisions mulberry tune touch
+                breath.</p>
+
+        </div>
+        <div class="reach-cards">
+            <div class="reach-card">
+                <img src="/public/images/reach-1.png">
+                <div class="reach-card-content">
+                    <p>May 30, 2017</p>
+                    <h3>Never at Home</h3>
+                    <p>Never at home with her and go fo the far so muchthet here is what to do .</p>
+                </div>
+            </div>
+            <div class="reach-card">
+                <img src="/public/images/reach-2.png">
+                <div class="reach-card-content">
+                    <p>June 12, 2018</p>
+                    <h3>Stay outside</h3>
+                    <p>Always her to party like a rockstar here and there some random texts.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#">See More -></a>
+    </section>
+    <footer>
+        <!-- <img src="./public/images/footer.png" /> -->
+        <div class="copyrights">
+            <p>&copy;All Rights Reserved. | <a href="https://www.kalakarist.com">Kalakarist</a></p>
+        </div>
+    </footer>
+    <script>
+        function responsive() {
+            var x = document.querySelector(".container");
+            if (x.className === "container") {
+                x.className += " responsive";
+            } else {
+                x.className = "container";
+            }
+        }
+        function playVideo() {
+            let myVideo = document.querySelector(".video");
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        } 
+    </script>
+
+</body>
+
+</html>

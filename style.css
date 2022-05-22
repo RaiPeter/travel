@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: black; */
+}
+
+nav {
+
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* box-shadow: 1px -6px 12px 0px rgb(0 0 0); */
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#818181, transparent);
+    /* border: 1px solid red; */
+    /* background: transparent; */
+}
+
+.container {
+    display: flex;
+    /* height: 4.5rem; */
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.container .nav-menu {
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+}
+
+.container .ham {
+    display: none;
+}
+
+.container .nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .nav-menu ul li {
+    list-style-type: none;
+}
+
+.container .nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: color 0.2s ease-in;
+}
+
+.container .nav-menu ul li a:hover {
+    color: black;
+}
+
+/* banner */
+.header {
+    height: 100vh;
+}
+
+.header .header-video {
+    width: 100%;
+    height: 100%;
+}
+
+/* .header .header-video .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 10px inset;
+} */
+
+.header .header-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .header-video .header-content {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.header .header-video .header-content h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 5px 20px black;
+}
+
+.header .header-video .header-content p {
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.header .header-video .header-content button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.header .header-video .header-content button i {
+    font-size: 3.4rem;
+    font-weight: 200;
+    color: white;
+}
+
+.header .header-video .header-content button i:hover {
+
+    color: rgb(203, 203, 203);
+}
+
+/* explore */
+.explore {
+    /* height: 100vh; */
+    padding-bottom: 2rem;
+    background-color: #010103;
+}
+
+.explore .explore-heading {
+    width: 50%;
+    /* border: 1px solid red; */
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.explore .explore-heading h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.explore .explore-heading p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.explore .explore-cards {
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore .explore-cards .explore-card {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.explore .explore-cards .explore-card .explore-card-content {
+    position: absolute;
+    bottom: 10%;
+    /* left: 0; */
+    /* border: 1px solid green; */
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.explore .explore-cards .explore-card .explore-card-content h3 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.explore .explore-cards .explore-card .explore-card-content p {
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.explore a {
+    display: block;
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.explore a:hover {
+    color: rgb(101, 101, 101);
+}
+
+/* reach */
+.reach {
+    /* height: 100vh; */
+    padding-bottom: 2rem;
+    background-color: #010103;
+}
+
+.reach .reach-heading {
+    width: 50%;
+    /* border: 1px solid red; */
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.reach .reach-heading h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.reach .reach-heading p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.reach .reach-cards {
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reach .reach-cards .reach-card {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 40%;
+}
+
+.reach .reach-cards .reach-card img {
+    width: 100%;
+}
+
+.reach .reach-cards .reach-card .reach-card-content {
+    /* border: 1px solid green; */
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.reach .reach-cards .reach-card .reach-card-content p:nth-child(1) {
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.reach .reach-cards .reach-card .reach-card-content h3 {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.reach .reach-cards .reach-card .reach-card-content p:nth-child(3) {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.reach a {
+    display: block;
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.reach a:hover {
+    color: rgb(101, 101, 101);
+}
+
+/* footer */
+footer {
+    background-image: url("./public/images/footer.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    height: 350px;
+    /* border: 1px solid green; */
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer .copyrights {
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+}
+
+footer .copyrights a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:480px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .ham {
+        display: block;
+    }
+
+    .container .nav-menu {
+        display: none;
+    }
+
+    .container.responsive .nav-menu {
+        display: block;
+        width: 100%;
+        padding-top: 50px;
+        background-color: #0101037e;
+
+    }
+
+    .container.responsive .nav-menu ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .header .header-video .header-content {
+        width: 90%;
+        top: 55%;
+        align-items: flex-start;
+    }
+
+    .header .header-video .header-content h1 {
+        font-size: 3rem;
+    }
+
+    .header .header-video .header-content p {
+        text-align: left;
+    }
+
+    .header .header-video .header-content button {
+        margin: auto;
+    }
+
+    .explore .explore-heading {
+        width: 90%;
+    }
+
+    .explore .explore-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .explore .explore-heading p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        /* text-align: left; */
+    }
+
+    .explore .explore-cards {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .explore .explore-cards .explore-card {
+        width: 100%;
+    }
+
+    .explore .explore-cards .explore-card img {
+        width: 100%;
+    }
+
+    .reach .reach-heading {
+        width: 90%;
+    }
+
+    .reach .reach-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .reach .reach-heading p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .reach .reach-cards {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .reach .reach-cards .reach-card {
+        width: 100%;
+    }
+
+    footer .copyrights {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+}
